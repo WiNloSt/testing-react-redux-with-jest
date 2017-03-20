@@ -2140,9 +2140,9 @@ eslint-config-standard-react@^4.3.0:
   dependencies:
     eslint-config-standard-jsx "^3.0.0"
 
-eslint-config-standard@^7.0.1:
-  version "7.1.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-standard/-/eslint-config-standard-7.1.0.tgz#47e769ea0739f5b2d5693b1a501c21c9650fafcf"
+eslint-config-standard@~7.0.1:
+  version "7.0.3"
+  resolved "https://registry.yarnpkg.com/eslint-config-standard/-/eslint-config-standard-7.0.3.tgz#140f7b4f1be0688fb1857444c114c9252321ccd6"
 
 eslint-import-resolver-node@^0.2.0:
   version "0.2.3"

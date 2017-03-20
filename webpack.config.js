@@ -6,18 +6,18 @@ module.exports = {
   entry: [
     'react-hot-loader/patch',
     'webpack-hot-middleware/client',
-    path.resolve('src/index.js'),
+    path.resolve('src/index.js')
   ],
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
-    publicPath: '/dist/',
+    publicPath: '/dist/'
   },
   module: {
     rules: [
       {
         test: /\.jsx?$/,
-        use: 'babel-loader',
+        use: 'babel-loader'
       },
       {
         test: /\.css$/,
@@ -26,14 +26,14 @@ module.exports = {
           {
             loader: 'css-loader',
             options: {
-              modules: true,
-            },
-          },
-        ],
-      },
-    ],
+              modules: true
+            }
+          }
+        ]
+      }
+    ]
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin(),
-  ],
+    new webpack.HotModuleReplacementPlugin()
+  ]
 }

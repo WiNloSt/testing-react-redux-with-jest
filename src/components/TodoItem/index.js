@@ -6,6 +6,6 @@ const TodoItem = ({ text, complete }) => (
 )
 TodoItem.propTypes = {
   text: PropTypes.string.isRequired,
-  complete: PropTypes.bool,
+  complete: PropTypes.bool
 }
 export default TodoItem
