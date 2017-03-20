@@ -4,16 +4,22 @@
     "browser": true,
     "es6": true,
   },
-  "extends": "airbnb",
+  "extends": ["standard", "standard-react"],
   "plugins": [
     "import",
   ],
+  "parser": "babel-eslint",
   "parserOptions": {
     "ecmaFeatures": {
       "experimentalObjectRestSpread": true,
     },
   },
   "rules": {
+    "space-before-function-paren": ["error", {
+        "anonymous": "always",
+        "named": "never",
+        "asyncArrow": "always"
+    }],
     "semi": ["warn", "never"],
     "class-methods-use-this": "off",
     "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx"] }],
